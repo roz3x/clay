@@ -14,5 +14,8 @@ parts = s.rsplit("\n\n",1)
 body = parts[0]
 main = parts[-1]
 
-print("body :\n" , body)
-print("\nmain : \n" , main)
+
+main_function = "int main(){\n\t%s\n\treturn 0;\n}\n" % main
+
+
+print(main_function)
