@@ -9,9 +9,9 @@ while s[-1] == '\n':
 	s = s[:-1]
 
 
-parts = s.split("\n\n")
+parts = s.rsplit("\n\n",1)
 
-body = '\n'.join(parts[:-1])
+body = parts[0]
 main = parts[-1]
 
 print("body :\n" , body)
