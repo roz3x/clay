@@ -5,10 +5,14 @@ f = open(file_path , "r")
 
 s = f.read()
 
-while s[len(s)-1] == '\n':
+while s[-1] == '\n':
 	s = s[:-1]
 
 
 parts = s.split("\n\n")
-for part in parts:
-	print(part)
+
+body = '\n'.join(parts[:-1])
+main = parts[-1]
+
+print("body :\n" , body)
+print("\nmain : \n" , main)
