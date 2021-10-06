@@ -15,7 +15,7 @@ body = parts[0]
 main = parts[-1]
 
 
-main_function = "int main(){\n\t%s\n\treturn 0;\n}\n" % main
+main_function = "#include<iostream>\n\nusing namespace std;\n\n%s\n\nint main(){\n\t%s\n\treturn 0;\n}\n" %(body,main)
 
 
 print(main_function)
