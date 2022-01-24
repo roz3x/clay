@@ -10,6 +10,7 @@ while s[-1] == '\n':
 
 
 parts = s.rsplit("\n\n",1)
+print()
 
 body = parts[0]
 main = parts[-1]
